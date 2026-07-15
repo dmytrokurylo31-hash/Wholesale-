@@ -191,7 +191,8 @@
     </div>
 
     <div class="links-group">
-        <a onclick="openTelegram()" class="btn btn-tg">
+        <!-- ТУТ ВСТАВТЕ ПОСИЛАННЯ НА ВАШ КАНАЛ ЗАМІСТЬ https://t.me -->
+        <a href="https://t.me" target="_blank" class="btn btn-tg">
             Приєднатися до Telegram
         </a>
         <a href="viber://chat?number=%2B380954345977" class="btn btn-viber">
@@ -237,12 +238,8 @@
 </div>
 
 <script>
-function openTelegram() {
-    var tgUrl = "tg://join?invite=CBLczFFCu3hjZThi";
-    var webUrl = "https://t.me";
+// Надійна функція копіювання реквізитів у буфер обміну
+function copyText(elementId) {
+    var textToCopy = document.getElementById(elementId).innerText;
     
-    var startTime = Date.now();
-    window.location.href = tgUrl;
-
-    setTimeout(function() {
-        if (Date.now() - startTime < 25
+    navi

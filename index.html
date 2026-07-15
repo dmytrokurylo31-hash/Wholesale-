@@ -191,8 +191,8 @@
     </div>
 
     <div class="links-group">
-        <!-- ТУТ ВСТАВТЕ ПОСИЛАННЯ НА ВАШ КАНАЛ ЗАМІСТЬ https://t.me -->
-        <a href="https://t.me" target="_blank" class="btn btn-tg">
+        <!-- Виправлене пряме deep-link посилання, що відкриває саме додаток Telegram -->
+        <a href="tg://join?invite=CBLczFFCu3hjZThi" class="btn btn-tg">
             Приєднатися до Telegram
         </a>
         <a href="viber://chat?number=%2B380954345977" class="btn btn-viber">
@@ -238,8 +238,7 @@
 </div>
 
 <script>
-// Надійна функція копіювання реквізитів у буфер обміну
 function copyText(elementId) {
     var textToCopy = document.getElementById(elementId).innerText;
     
-    navi
+    navigator.clipboard.writeText(textToCo

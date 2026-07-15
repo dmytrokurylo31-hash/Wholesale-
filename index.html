@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WholesaleTOP — Гуртівня товарів з Європи</title>
+    <title>WholeSale — Гуртівня товарів з Європи</title>
     <style>
         :root {
             --tg-color: #24A1DE;
@@ -186,12 +186,11 @@
 
 <div class="container">
     <div class="logo-area">
-        <h1>WholesaleTOP</h1>
+        <h1>WholeSale</h1>
         <div class="subtitle">Гуртівня товарів з Європи</div>
     </div>
 
     <div class="links-group">
-        <!-- Кнопка з виправленим скриптом переходу -->
         <a onclick="openTelegram()" class="btn btn-tg">
             Приєднатися до Telegram
         </a>
@@ -234,11 +233,16 @@
         </div>
     </div>
 
-    <footer>&copy; WholesaleTOP. Всі права захищені.</footer>
+    <footer>&copy; WholeSale. Всі права захищені.</footer>
 </div>
 
 <script>
-// Надійна функція переходу, яка спочатку пробує відкрити додаток, а потім сайт
 function openTelegram() {
     var tgUrl = "tg://join?invite=CBLczFFCu3hjZThi";
-    var webUrl = "https://t
+    var webUrl = "https://t.me";
+    
+    var startTime = Date.now();
+    window.location.href = tgUrl;
+
+    setTimeout(function() {
+        if (Date.now() - startTime < 25
